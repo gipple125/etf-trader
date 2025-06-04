@@ -5,10 +5,13 @@
 # Python 캐시 파일
 __pycache__/
 *.py[cod]
+*.pyo
 
 # 가상환경 폴더
 venv/
 .venv/
+ENV/
+env/
 
 # Jupyter Notebook 체크포인트 (사용 시)
 .ipynb_checkpoints/
@@ -23,11 +26,20 @@ venv/
 *.sqlite3
 *.db
 
+# Windows 시스템 파일
+Thumbs.db
+desktop.ini
+
 # ==========================
 # 🧱 MySQL 백업/덤프 파일
 # ==========================
 *.sql
 *.dump
+*.log
+
+# 기타 숨김 파일
+*.swp
+*.swo
 
 # ==========================
 # 🔧 VS Code 설정 (개인 설정 제외)
@@ -36,6 +48,8 @@ venv/
 .vscode/launch.json
 .vscode/tasks.json
 .vscode/*.code-workspace
+.vscode/
+*.code-workspace
 
 # ==========================
 # 📊 로그 및 출력 결과
