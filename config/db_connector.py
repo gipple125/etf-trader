@@ -1,9 +1,9 @@
 import mysql.connector
-from config_loader import DB_CONFIG
+from config.config_loader import DB_CONFIG
 
 def get_connection():
     """
-    📌 MySQL 연결 객체 생성
+    # 📌 MySQL 연결 객체 생성
     """
     try:
         conn = mysql.connector.connect(**DB_CONFIG)
